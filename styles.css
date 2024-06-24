@@ -96,11 +96,11 @@ button:hover {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .custom-alert button:hover {
-    background-color: #0056b3;
+    background-color: #cee4fc;
 }
       
