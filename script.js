@@ -51,8 +51,6 @@ function checkAnswer() {
         alert('The answers are: ' + flashcards[currentIndex].answers.join(', '));
     }
 
-
-
     // Clear input field
     document.getElementById('user-answer').value = '';
 

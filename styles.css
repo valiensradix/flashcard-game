@@ -10,6 +10,8 @@ html {
 body {
     font-family: Arial, sans-serif;
     background-color: burlywood;
+    display: flex;
+    height: 100vh;
 }
 
 h1 {
@@ -23,8 +25,8 @@ h2 {
     background-color: rgb(255, 102, 0);
     color: rgb(247, 240, 196);
     padding: 2em;
-    margin: 1em;
     border-radius: 5px;
+    flex: 1;
 }
 body div div {
     background-color: black;
@@ -46,6 +48,20 @@ body div div {
     text-align: left;
 }
 */
+input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 123, 255, 0.6);
+}
 
 button {
     padding: .5em;
@@ -53,6 +69,36 @@ button {
     background-color: rgb(193, 224, 251);
     font-size: .5em;
 }
+button:hover {
+    background-color: #0056b3;
+}
 
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
+.custom-alert-content {
+    text-align: center;
+}
+
+.custom-alert button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.custom-alert button:hover {
+    background-color: #0056b3;
+}
       
