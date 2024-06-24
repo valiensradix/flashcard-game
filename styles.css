@@ -18,6 +18,7 @@ h1 {
     text-align: center;
     font-size: 1.5em;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 h2 {
@@ -28,6 +29,7 @@ h2 {
     border-radius: 10px;
     flex: 1;
     width: 100%;
+    flex-wrap: wrap;
 }
 body div div {
     background-color: black;
@@ -70,7 +72,8 @@ button {
     margin: 1em;
     background-color: rgb(193, 224, 251);
     font-size: .5em;
-    border-radius: 10px;
+    border-radius: 5px;
+
 }
 /*
 .custom-alert {
