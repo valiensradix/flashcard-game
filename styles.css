@@ -43,5 +43,8 @@ button {
     margin-left: 1em;
     background-color: rgb(198, 219, 232);
 }
+.show-answers-button {
+    font-size: .5em;
+}
 
       
