@@ -22,9 +22,11 @@ h2 {
     font-size: 2em;
     background-color: rgb(255, 102, 0);
     color: rgb(247, 240, 196);
+    padding: 2em;
 }
 body div div {
     background-color: black;
+    padding: 2em;
 }
 #flashcard-container {
     display: flex;
