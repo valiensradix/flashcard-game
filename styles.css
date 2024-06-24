@@ -19,7 +19,6 @@ h1 {
     font-size: 1.5em;
     padding: .5em;
     flex: 1;
-    flex-wrap: wrap;
     background-color: rgb(247, 240, 196;
     border-radius: 8px;
 }
@@ -32,7 +31,6 @@ h2 {
     border-radius: 10px;
     flex: 1;
     width: 100%;
-    flex-wrap: wrap;
 }
 body div div {
     background-color: black;
