@@ -35,6 +35,11 @@ function displayFlashcard(index) {
     }
 }
 
+// show answers
+function showAnswers(index) {
+    alert(flashcards[index].answers.join(', '));
+}
+
 // check user answer
 function checkAnswer() {
     const userAnswer = document.getElementById('user-answer').value.toLowerCase();
@@ -46,10 +51,7 @@ function checkAnswer() {
         alert('The answers are: ' + flashcards[currentIndex].answers.join(', '));
     }
 
-// show answers
-function showAnswers(index) {
-    alert(flashcards[index].answers.join(', '));
-}
+
 
     // Clear input field
     document.getElementById('user-answer').value = '';
