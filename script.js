@@ -2,17 +2,17 @@
 const flashcards = [
     {
         "id": 1,
-        "question": "What does the Latin root <i>sol</i> mean?",
+        "question": "What does the Latin root sol mean?",
         "answers": ["sun"]
     },
     {
         "id": 2,
-        "question": "What does the Latin root <i>stella</i> mean?",
+        "question": "What does the Latin root stella mean?",
         "answers": ["star"]
     },
     {
         "id": 3,
-        "question": "What does the Latin root <i>terra</i> mean?",
+        "question": "What does the Latin root terra mean?",
         "answers": ["land", "earth", "soil", "ground"]
     }
 ];
