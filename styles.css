@@ -31,6 +31,7 @@ h2 {
 }
 body div div {
     background-color: black;
+    flex: 1;
 }
 #flashcard-container {
     display: flex;
