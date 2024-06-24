@@ -23,6 +23,7 @@ h2 {
     background-color: rgb(255, 102, 0);
     color: rgb(247, 240, 196);
     padding: 2em;
+    margin: 1em;
 }
 body div div {
     background-color: black;
