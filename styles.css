@@ -26,13 +26,11 @@ h2 {
 }
 body div div {
     background-color: black;
-    padding: 2em;
 }
 #flashcard-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 1em; 
     padding: 1em;
 }
 
@@ -47,8 +45,7 @@ body div div {
 
 button {
     padding: .5em;
-    margin-top: .5em;
-    margin-left: 1em;
+    margin: 1em;
     background-color: rgb(193, 224, 251);
     font-size: .5em;
 }
