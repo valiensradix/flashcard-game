@@ -2,6 +2,10 @@
     font-size: 20px;
     padding: 0;
     margin: 0;
+    
+}
+html {
+    background-color: bisque;
 }
 body {
     font-family: Arial, sans-serif;
@@ -9,6 +13,12 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 1.5em;
+
+}
+
+h2 {
+    font-size: 2em;
 }
 
 #flashcard-container {
@@ -28,7 +38,10 @@ h1 {
 }
 
 button {
+    padding: .5em;
     margin-top: .5em;
+    margin-left: 1em;
+    background-color: rgb(198, 219, 232);
 }
 
       
