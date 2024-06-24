@@ -34,7 +34,7 @@ body div div {
     align-items: flex-start;
     padding: 1em;
 }
-
+/*
 .flashcard {
     margin: 1em;
     padding: 1em;
@@ -43,6 +43,7 @@ body div div {
     width: 15em;
     text-align: left;
 }
+*/
 
 button {
     padding: .5em;
