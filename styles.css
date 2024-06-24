@@ -24,6 +24,7 @@ h2 {
     color: rgb(247, 240, 196);
     padding: 2em;
     margin: 1em;
+    border-radius: 5px;
 }
 body div div {
     background-color: black;
@@ -33,6 +34,7 @@ body div div {
     flex-direction: column;
     align-items: flex-start;
     padding: 1em;
+    
 }
 /*
 .flashcard {
