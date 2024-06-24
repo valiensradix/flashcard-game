@@ -20,6 +20,8 @@ h1 {
 
 h2 {
     font-size: 2em;
+    background-color: rgb(255, 102, 0);
+    color: rgb(247, 240, 196);
 }
 
 #flashcard-container {
@@ -43,7 +45,7 @@ button {
     padding: .5em;
     margin-top: .5em;
     margin-left: 1em;
-    background-color: aliceblue;
+    background-color: rgb(193, 224, 251);
     font-size: .5em;
 }
 
