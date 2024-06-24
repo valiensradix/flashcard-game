@@ -5,10 +5,11 @@
     
 }
 html {
-    background-color: bisque;
+    background-color: cornsilk;
 }
 body {
     font-family: Arial, sans-serif;
+    background-color: burlywood;
 }
 
 h1 {
@@ -42,10 +43,9 @@ button {
     padding: .5em;
     margin-top: .5em;
     margin-left: 1em;
-    background-color: rgb(198, 219, 232);
-}
-#show-answers-button {
+    background-color: aliceblue;
     font-size: .5em;
 }
+
 
       
