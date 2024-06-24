@@ -27,7 +27,7 @@ function displayFlashcard(index) {
     if (index < flashcards.length) {
         const flashcard = flashcards[index];
         console.log('Displaying question:', flashcard.question); // Debugging log
-        questionText.textContent = `${flashcard.id}. ${flashcard.question}`;
+        questionText.textContent = `${flashcard.question}`;
         showAnswersButton.setAttribute('onclick', `showAnswers(${index})`);
     } else {
         questionText.textContent = 'Refresh to start again, more cards added regularly.';
