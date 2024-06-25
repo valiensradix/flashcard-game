@@ -40,6 +40,17 @@ body div div {
     padding: 1em;
     
 }
+button {
+    padding: .5em;
+    margin: 1em;
+    background-color: rgb(193, 224, 251);
+    font-size: .5em;
+    border-radius: 5px;
+
+}
+
+@media
+
 /*
 .flashcard {
     margin: 1em;
@@ -49,11 +60,11 @@ body div div {
     width: 15em;
     text-align: left;
 }
-*/
+
 input[type="text"] {
-    width: calc(100% - 40px);
+    width: calc(100% - 2em);
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -64,15 +75,8 @@ input[type="text"]:focus {
     outline: none;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 123, 255, 0.6);
 }
+*/
 
-button {
-    padding: .5em;
-    margin: 1em;
-    background-color: rgb(193, 224, 251);
-    font-size: .5em;
-    border-radius: 5px;
-
-}
 /*
 .custom-alert {
     display: none;
