@@ -14,16 +14,16 @@ const flashcards = [
 let currentIndex = 0;
 
 function displayFlashcard(index) {
-    const questionText = document.getElementById('question-text');
+    const h2Element = document.getElementById('question-text');
     const showAnswersButton = document.getElementById('show-answers-button');
 
     if (index < flashcards.length) {
         const flashcard = flashcards[index];
         const rootWords = flashcard.rootWord.split(',').map(word => `<i>${word.trim()}</i>`).join(' or ');
-        questionText.innerHTML = `${rootWords} from the ${flashcard.origin} root means?`;
+        h2Element.innerHTML = `${rootWords}, from the ${flashcard.origin} root, means?`;
         showAnswersButton.setAttribute('onclick', `showAnswers(${index})`);
     } else {
-        questionText.textContent = 'Refresh to start again, more cards added regularly.';
+        h2Element.textContent = 'Refresh to start again, more cards added regularly.';
         showAnswersButton.style.display = 'none';
     }
 }
