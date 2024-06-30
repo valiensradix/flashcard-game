@@ -47,4 +47,5 @@ function checkAnswer() {
     displayFlashcard(currentIndex);
 }
 
+// Initial display of first flashcard
 displayFlashcard(currentIndex);
