@@ -1,16 +1,20 @@
-*{
+* {
     font-size: 20px;
     padding: 0;
     margin: 0;
-    
 }
+
 html {
     background-color: cornsilk;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: burlywood;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
 }
 
@@ -24,33 +28,33 @@ h2 {
     font-size: 2em;
     background-color: rgb(255, 102, 0);
     color: rgb(247, 240, 196);
-    padding: 2em;
+    padding: 1em;
     border-radius: 10px;
-    flex: 1;
-    width: 100%;
+    text-align: center;
+    width: 80%;
 }
+
 body div div {
     background-color: black;
     width: 100%;
 }
+
 #flashcard-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 1em;
-    
+    width: 80%;
 }
+
 button {
     padding: .5em;
     margin: 1em;
     background-color: rgb(193, 224, 251);
-    font-size: .5em;
+    font-size: 1em;
     border-radius: 5px;
-
+    cursor: pointer;
 }
-
-@media
-
 
 input[type="text"] {
     width: calc(100% - 2em);
@@ -67,44 +71,36 @@ input[type="text"]:focus {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 123, 255, 0.6);
 }
 
-/*
-.flashcard {
-    margin: 1em;
-    padding: 1em;
-    border: 1px solid #000;
-    border-radius: 5px;
-    width: 15em;
-    text-align: left;
-}
-*/
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+        padding: .5em;
+    }
 
-/*
-.custom-alert {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    button {
+        font-size: .8em;
+        padding: .4em;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 2em);
+        padding: 8px;
+    }
 }
 
-.custom-alert-content {
-    text-align: center;
-}
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+        padding: .5em;
+    }
 
-.custom-alert button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
+    button {
+        font-size: .7em;
+        padding: .3em;
+    }
 
-.custom-alert button:hover {
-    background-color: #cee4fc;
+    input[type="text"] {
+        width: calc(100% - 2em);
+        padding: 6px;
+    }
 }
-*/
