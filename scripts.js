@@ -20,7 +20,7 @@ function displayFlashcard(index) {
     if (index < flashcards.length) {
         const flashcard = flashcards[index];
         const rootWords = flashcard.rootWord.split(',').map(word => `<i>${word.trim()}</i>`).join(' or ');
-        h2Element.innerHTML = `${rootWords}, from the ${flashcard.origin} root, means?`;
+        h2Element.innerHTML = `'${rootWords}' from the '${flashcard.origin}' root means?`;
         showAnswersButton.setAttribute('onclick', `showAnswers(${index})`);
     } else {
         h2Element.textContent = 'Refresh to start again, more cards added regularly.';
