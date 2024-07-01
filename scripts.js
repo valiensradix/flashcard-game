@@ -48,5 +48,14 @@ function checkAnswer() {
     displayFlashcard(currentIndex);
 }
 
-// Initial display of first flashcard
-displayFlashcard(currentIndex);
+    // Clear input field
+    document.getElementById('user-answer').value = '';
+
+    // Move to next random flashcard
+    currentIndex = Math.floor(Math.random() * flashcardsData.length);
+    displayFlashcard(flashcardsData[currentIndex]);
+}
+
+// Initial display of a random flashcard
+currentIndex = Math.floor(Math.random() * flashcardsData.length);
+displayFlashcard(flashcardsData[currentIndex]);
