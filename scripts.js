@@ -13,28 +13,34 @@ const flashcards = [
 
 let currentIndex = 0;
 
-// Function to display a flashcard question
 function displayFlashcard(index) {
-    const questionText = document.getElementById('question-text');
+    const h2Element = document.getElementById('question-text');
+    const showAnswersButton = document.getElementById('show-answers-button');
 
     if (index < flashcards.length) {
         const flashcard = flashcards[index];
-        const question = `'${flashcard.rootWord}' from the '${flashcard.origin}' means?`;
-        questionText.textContent = question;
+        const rootWords = flashcard.rootWord.split(',').map(word => `<i>${word.trim()}</i>`).join(' or ');
+        const question = `'${rootWords}' from the '${flashcard.origin}' means?`;
+        h2Element.textContent = question;
+        showAnswersButton.setAttribute('onclick', `showAnswers(${index})`);
     } else {
-        questionText.textContent = 'No more flashcards.';
+        h2Element.textContent = 'Refresh to start again, more cards added regularly.';
+        showAnswersButton.style.display = 'none';
     }
 }
 
-// Function to check user's answer
+function showAnswers(index) {
+    alert(flashcards[index].answers.join(', '));
+}
+
 function checkAnswer() {
     const userAnswer = document.getElementById('user-answer').value.toLowerCase();
     const correctAnswers = flashcards[currentIndex].answers.map(answer => answer.toLowerCase());
 
     if (correctAnswers.includes(userAnswer)) {
-        alert('Correct! ' + flashcards[currentIndex].answers.join(', '));
+        alert('Correct!   ' + flashcards[currentIndex].answers.join(', '));
     } else {
-        alert('Incorrect. The correct answer is: ' + flashcards[currentIndex].answers.join(', '));
+        alert('The answers are: ' + flashcards[currentIndex].answers.join(', '));
     }
 
     document.getElementById('user-answer').value = '';
@@ -42,5 +48,5 @@ function checkAnswer() {
     displayFlashcard(currentIndex);
 }
 
-// Initial display of the first flashcard
+// Initial display of first flashcard
 displayFlashcard(currentIndex);
