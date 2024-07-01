@@ -13,6 +13,12 @@ const flashcards = [
 
 let currentIndex = 0;
 
+// Function to get a random flashcard
+function getRandomFlashcard() {
+    const randomIndex = Math.floor(Math.random() * flashcardsData.length);
+    return flashcardsData[randomIndex];
+}
+
 function displayFlashcard(index) {
     const h2Element = document.getElementById('question-text');
     const showAnswersButton = document.getElementById('show-answers-button');
