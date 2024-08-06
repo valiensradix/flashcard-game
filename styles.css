@@ -1,0 +1,106 @@
+* {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: cornsilk;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+h2 {
+    font-size: 1em;
+    background-color: rgb(255, 102, 0);
+    color: rgb(247, 240, 196);
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+body div div {
+    background-color: black;
+    width: 100%;
+}
+
+#flashcard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    width: 80%;
+}
+
+button {
+    padding: .5em;
+    margin: 1em;
+    background-color: rgb(193, 224, 251);
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: calc(100% - 2em);
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.2em;
+        padding: .5em;
+    }
+
+    button {
+        font-size: .8em;
+        padding: .4em;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 2em);
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1em;
+        padding: .5em;
+    }
+
+    button {
+        font-size: .7em;
+        padding: .3em;
+    }
+
+    input[type="text"] {
+        width: calc(100% - 2em);
+        padding: 6px;
+    }
+}
